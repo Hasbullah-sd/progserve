@@ -60,17 +60,19 @@ https://templatemo.com/tm-568-digimedia
           <div class="col-lg-8 col-sm-8 col-7">
             <ul class="info">
               <li>
-                <a href="#"><i class="fa fa-envelope"></i>info@progsev.com</a>
+                <a href="mailto:info.progsev@gmail.com"
+                  ><i class="fa fa-envelope"></i>info.progsev@gmail.com</a
+                >
               </li>
               <li>
-                <a href="#"><i class="fa fa-phone"></i>+62 8788 6036 854</a>
+                <a href="#"><i class="fa fa-phone">+62 8788 6036 854</i></a>
               </li>
             </ul>
           </div>
           <div class="col-lg-4 col-sm-4 col-5">
             <ul class="social-media">
               <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-youtube-play"></i></a>
               </li>
               <li>
                 <a href="https://www.instagram.com/prog_serv/"
@@ -313,7 +315,7 @@ https://templatemo.com/tm-568-digimedia
               data-wow-delay="0.5s"
             >
               <h6>Our Services</h6>
-              <h4>What Our Agency <em>Provides</em></h4>
+              <h4>What Our <em>Provides</em></h4>
               <div class="line-dec"></div>
             </div>
           </div>
@@ -976,7 +978,7 @@ https://templatemo.com/tm-568-digimedia
             data-wow-duration="0.5s"
             data-wow-delay="0.25s"
           >
-            <form id="contact" action="" method="post">
+            <form id="contact" method="post">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="contact-dec">
@@ -1006,14 +1008,7 @@ https://templatemo.com/tm-568-digimedia
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-4">
-                        <div class="info-post">
-                          <div class="icon">
-                            <img src="assets/images/email-icon.png" alt="" />
-                            <a href="#">info@progsev.com</a>
-                          </div>
-                        </div>
-                      </div>
+
                       <div class="col-lg-4">
                         <div class="info-post">
                           <div class="icon">
@@ -1044,13 +1039,21 @@ https://templatemo.com/tm-568-digimedia
                           />
                         </fieldset>
                         <fieldset>
-                          <input
-                            type="subject"
-                            name="subject"
+                          <select
+                            class="selected-form"
                             id="subject"
-                            placeholder="Subject"
-                            autocomplete="on"
-                          />
+                            name="subject"
+                            required
+                          >
+                            <option selected value="">
+                              Select Object Message
+                            </option>
+                            <option value="Consultance">Consultance</option>
+                            <option value="Buy Template web">
+                              Buy Template web
+                            </option>
+                            <option value="Ask">Ask</option>
+                          </select>
                         </fieldset>
                       </div>
                       <div class="col-lg-6">
@@ -1069,7 +1072,7 @@ https://templatemo.com/tm-568-digimedia
                         <fieldset>
                           <button
                             type="submit"
-                            id="form-submit"
+                            id="formSubmit"
                             class="main-button"
                           >
                             Send Message Now
@@ -1098,6 +1101,12 @@ https://templatemo.com/tm-568-digimedia
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/animation.js"></script>
